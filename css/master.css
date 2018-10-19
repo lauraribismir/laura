@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman|K2D');
+h1{font-family: 'Charmonman', cursive;}
+h1{font-size: 70px}
+body{
+  background: rgb(240,230,140);
+}
+p{font-family: 'Fahkwang', sans-serif;}
+p{font-size: 50}
+
+
+#section02 h1{
+  font-family: font-family: 'Oswald', sans-serif;
+  font-size: 7em
+  font-weight: 800;
+}
+
+#section02 p {
+  font-family: font-family: 'Slabo 27px', serif;
+  font-size: 7em
+  font-weight: 800
+}
