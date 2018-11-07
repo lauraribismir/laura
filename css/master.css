@@ -1,21 +1,166 @@
-@import url('https://fonts.googleapis.com/css?family=Charmonman|K2D');
-h1{font-family: 'Charmonman', cursive;}
-h1{font-size: 70px}
-body{
-  background: rgb(240,230,140);
-}
-p{font-family: 'Fahkwang', sans-serif;}
-p{font-size: 50}
+/* Ceci est un commentaire en CSS - Les navigateurs ignorent les commentaires.
+De cette manière nous pouvons laisser des messages pour d’autres codeurs et des explications de ce que nous avons fait. */
+
+/* Dans les 4 selectors suivants nous allons travailler sur la navigation de notre page.
+
+Nous découvrons ici la possibilité d’utiliser des selectors composés ex : header ul  Ceci permet, par exemple, de cibler les elements de la liste du header sans affecter ceux du footer.
+ */
+ @import url(‘https://fonts.googleapis.com/css?family=Great+Vibes|Vidaloka’);
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One')
 
 
-#section02 h1{
-  font-family: font-family: 'Oswald', sans-serif;
-  font-size: 7em
-  font-weight: 800;
+ html {
+   font-size: 1em;
+ }
+
+ body {
+   font-family: "Vidaloka", serif;
+   font-weight: 400;
+   line-height: 1.45;
+ }
+
+ p {
+   margin-bottom: 4em;
+ }
+
+ h1, h2, h3, h4 {
+   font-family: "Great Vibes", cursive;
+   margin: 1.414em 0 0.5em;
+   font-weight: inherit;
+   line-height: 1.2;
+ }
+
+ h1 {
+   margin-top: 0;
+   font-size: 4.000em;
+   text-align: center;
+
+ }
+
+ h2 {font-size: 2.000em;}
+
+ h3 {font-size: 1.999em;}
+
+ h4 {font-size: 1.414em;}
+
+ small, .font_small {font-size: 0.707em;}
+
+
+header {
+  background: rgb(255, 191, 128);
+  padding: 30px;
 }
 
-#section02 p {
-  font-family: font-family: 'Slabo 27px', serif;
-  font-size: 7em
-  font-weight: 800
+header ul {
+  list-style-type: none;
 }
+
+header li {
+  display: inline-block;
+  border: 1px solid
+  color : #000000;
+}
+
+header a {
+  text-decoration: none;
+  color : #ffffff;
+  padding: 12px;
+  display: block;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+/* A noter ici :
+1. L’utilisation d’une class sur la div, nous la ciblons ici dans la CSS au moyen d’un point .
+2. l’utilisation de background image et de background size
+3. une hauteur minimal à la div. (pour comprendre ce qu’est une VH : https://css-tricks.com/the-lengths-of-css/)
+*/
+.hero {
+  background: rgb(204, 255, 255) url('images/petitrenard.jpg') top center no-repeat;
+  <images="border-color:#FFFFFF;" border="10" src="images/petitrenard.jpg"/>
+  background-attachment: fixed;
+  color : #ffffff;
+  min-height: 100vh;
+}
+
+
+/* Sur les sections :
+1. Nous utilisons encore une hauteur minimale pour faciliter la lecture et le rythme vertical de la page.
+2. Nous utilsons des classes pour permettre d’aleterner visuellement les sections.
+*/
+section {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+
+.odd {
+  background: rgb(255, 191, 128);
+  }
+
+.even {
+  background: rgb(204, 255, 255);
+  color : #000000;
+}
+
+img { 
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+}
+.image-block img {
+  max-width: 640px;
+}
+  section {
+    min-height: 8vh;
+    padding: 42px;
+  }
+
+/* Nous souhaitons que les images soient responsives... c’est à dire n’éxcèdent pas une certaine largeur ET se redimensionnent avec leur parent */
+
+.image-block img {
+  max-width: 640px;
+}
+/*  border: 12px solid #000;
+}*/
+
+.image-block img {
+  width : 100%;
+display:block;
+}
+
+figcaption {
+  font-family: 'Josefin Slab', serif;
+  font-style: italic;
+
+}
+
+footer {
+  font-family: 'Josefin Slab', serif;
+  min-height: 600px;
+  background: #000;
+  color : #Ffffff;
+}
+
+.illustration {
+flex-basis: 480px
+}
+
+
+/*
+
+// Small devices
+
+// Medium devices (landscape phones, 576px and up)
+@media (min-width: 640px) { ... }
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// Extra large devices
+
+@media (min-width: 1440px) { ... }
+
+*/

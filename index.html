@@ -2,23 +2,42 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Fables</title>
+    <title>Fables de la fontaine</title>
+<!-- Nous appelons 2 feuilles de styles différentes. La première dédié à la typographie de la page, la deuxième concerne le reste des styles pour la page.-->
+    <link rel="stylesheet" href="css/typo.css">
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
 
-    <header>
 
-      <ul>
-        <li>La Cigale et la Fourmi</li>
-        <li>La Mouche et la Fourmi</li>
-        <li>Les Deux Pigeons</li>
-        <li>Le Lion</li>
-        <li>Le Singe et le Léopard</li>
-      </ul>
-    </header>
-    <h1>La Cigale et la Fourmi !</h1>
-    <p>La cigale ayant chanté
+<!-- Ceci est un commentaire - Les navigateurs ignorent les commentaires.
+De cette manière nous pouvons laisser des messages pour d’autres codeurs et des explications de ce que nous avons fait.  -->
+
+<!-- Dans le header (NE PAS confondre avec head!) nous allons mettre la navigation -->
+<header>
+  <nav>
+    <center><ul>
+      <li><a href="#section01">La cigale et la fourmi</a></li>
+      <!-- Remarquer ici le # dans le lien pointe vers un identifiant unique dans la page -->
+      <li><a href="#section02">La tortue et le lièvre</a></li>
+      <li><a href="#section03">Le chat et le rat</a></li>
+      <li><a href="#section04">Le corbeau et le renard</a></li>
+      <li><a href="#section05">Le coq et le renard</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Ici on va utiliser une DIV pour regrouper l’information et une image de fond pour amener la décoration. ATTENTION : nous n’avions pas fait comme ceci en cours! L’image est dans les styles et pas dans la page en tant que contenu.  -->
+
+<div class="hero">
+   <h1>
+     La Fontaine</h1>
+</div>
+
+<section id="section01" class="odd">
+  <div class="content">
+    <h1>La cigale et la fourmi</h1>
+    <p>La Cigale, ayant chanté
 Tout l'été,
 Se trouva fort dépourvue
 Quand la bise fut venue.
@@ -30,257 +49,189 @@ La priant de lui prêter
 Quelque grain pour subsister
 Jusqu'à la saison nouvelle.
 Je vous paierai, lui dit-elle,
-Avant l’août, foi d'animal,
+Avant l'août, foi d'animal,
 Intérêt et principal.
-La Fourmi n'est pas prêteuse,
-C'est là son moindre défaut.
+La Fourmi n'est pas prêteuse ;
+C'est là son moindre défaut (3).
 Que faisiez-vous au temps chaud ?
 Dit-elle à cette emprunteuse.
-Nuit et jour à tout venant,
+Nuit et jour à tout venant
 Je chantais, ne vous déplaise.
-Vous chantiez ? j'en suis fort aise,
-Eh bien! dansez maintenant.</p>
-      <div class="image-block">
-         <img src="images/fourmi.jpg" alt="beauty">
-
-
-
-<section id="section02" class"even">
-
-        </div>
-        <h1>La Mouche et la Fourmi</h1>
-        <p>La Mouche et la Fourmi contestaient de leur prix.
-Ô Jupiter ! dit la première,
-Faut-il que l’amour propre aveugle les esprits
-D’une si terrible manière,
-Qu’un vil et rampant animal
-À la fille de l’air ose se dire égal ?
-Je hante les Palais ; je m’assieds à la table :
-Si l’on t’immole un bœuf, j’en goûte devant toi :
-Pendant que celle-ci chétive et misérable,
-Vit trois jours d’un fétu qu’elle a traîné chez soi.
-Mais ma mignonne, dites-moi,
-Vous campez-vous jamais sur la tête d’un Roi,
-D’un Empereur, ou d’une Belle ?
-Je le fais ; et je baise un beau sein quand je veux :
-Je me joue entre des cheveux :
-Je rehausse d’un teint la blancheur naturelle :
-Et la dernière main que met à sa beauté
-Une femme allant en conquête,
-C’est un ajustement des Mouches emprunté.
-Puis allez-moi rompre la tête
-De vos greniers. Avez-vous dit ?
-Lui répliqua la ménagère.
-Vous hantez les Palais : mais on vous y maudit.
-Et quant à goûter la première
-De ce qu’on sert devant les Dieux,
-Croyez-vous qu’il en vaille mieux ?
-Si vous entrez partout : aussi font les profanes.
-Sur la tête des Rois et sur celle des Ânes
-Vous allez vous planter ; je n’en disconviens pas ;
-Et je sais que d’un prompt trépas
-Cette importunité bien souvent est punie.
-Certain ajustement, dites-vous, rend jolie.
-J’en conviens : il est noir ainsi que vous et moi.
-Je veux qu’il ait nom Mouche ; est-ce un sujet pourquoi
-Vous fassiez sonner vos mérites ?
-Nomme-t-on pas aussi Mouches les parasites ?
-Cessez donc de tenir un langage si vain :
-N’ayez plus ces hautes pensées :
-Les Mouches de Cour sont chassées :
-Les Mouchards sont pendus : et vous mourrez de faim,
-De froid, de langueur, de misère,
-Quand Phœbus régnera sur un autre hémisphère.
-Alors je jouirai du fruit de mes travaux.
-Je n’irai par monts ni par vaux
-M’exposer au vent, à la pluie.
-Je vivrai sans mélancolie.
-Le soin que j’aurai pris, de soin m’exemptera.
-Je vous enseignerai par là
-Ce que c’est qu’une fausse ou véritable gloire.
-Adieu : je perds le temps : laissez-moi travailler.
-Ni mon grenier ni mon armoire
-Ne se remplit à babiller.</p>
-
-  <img src="images/mouche.jpg" alt="other beauty">
+Vous chantiez ? j'en suis fort aise :
+Et bien ! dansez maintenant.</p>
+  </div>
+  <div class="illustration">
+    <div class="image-block">
+    <img src="images/fourmi.jpg" alt="HTML5 Icon" style="width:500px;height:500px;">
+    </div>
+    <figcaption>c'est une chipie la fourmie</figcaption>
+  </div>
 </section>
 
+<section id="section02" class="even">
+  <div class="content">
+    <h1>La tortue et le lièvre</h1>
+    <p>Le Lièvre considérant la Tortue qui marchait d’un pas tardif, et qui ne se traînait qu’avec peine, se mit à se moquer d’elle et de sa lenteur. La Tortue n’entendit point raillerie, et lui dit d’un ton aigre, qu’elle le défiait, et qu’elle le vaincrait à la course, quoiqu’il se vantât fièrement de sa légèreté. Le Lièvre accepta le défi. Ils convinrent ensemble du lieu où ils devaient courir, et du terme de leur course. Le Renard fut choisi par les deux parties pour juger ce différend. La Tortue se mit en chemin, et le Lièvre à dormir, croyant avoir toujours du temps de reste pour atteindre la Tortue, et pour arriver au but avant elle. Mais enfin elle se rendit au but avant que le Lièvre fut éveillé. Sa nonchalance l’exposa aux railleries des autres Animaux. Le Renard, en Juge équitable, donna le prix de la course à la Tortue.</p>
+
+  </div>
+  <div class="illustration">
+    <div class="image-block">
+    <img src="images/tortue.jpg" alt="HTML5 Icon" style="width:500px;height:500px;">
+    </div>
+    <figcaption>la tortue bin elle est plus rapide que le lièvre</figcaption>
+  </div>
+</section>
+
+<section id="section03" class="odd">
+  <div class="content">
+    <h1>Le chat et le rat</h1>
+    <p>Quatre animaux divers, le Chat grippe-fromage,
+Triste-oiseau le Hibou, Ronge-maille le Rat,
+Dame Belette au long corsage,
+Toutes gens d'esprit scélérat,
+Hantaient le tronc pourri d'un pin vieux et sauvage.
+Tant y furent qu'un soir à l'entour de ce pin
+L'homme tendit ses rets. Le Chat de grand matin
+Sort pour aller chercher sa proie.
+Les derniers traits de l'ombre empêchent qu'il ne voie
+Le filet ; il y tombe, en danger de mourir ;
+Et mon Chat de crier, et le Rat d'accourir,
+L'un plein de désespoir, et l'autre plein de joie.
+Il voyait dans les lacs son mortel ennemi.
+Le pauvre Chat dit : Cher ami,
+Les marques de ta bienveillance
+Sont communes en mon endroit :
+Viens m'aider à sortir du piège où l'ignorance
+M'a fait tomber. C'est à bon droit
+Que, seul entre les tiens par amour singulière
+Je t'ai toujours choyé, t'aimant comme mes yeux.
+Je n'en ai point regret, et j'en rends grâce aux Dieux.
+J'allais leur faire ma prière ;
+Comme tout dévot Chat en use les matins,
+Ce réseau me retient : ma vie est en tes mains ;
+Viens dissoudre ces noeuds. - Et quelle récompense
+En aurai-je ? reprit le Rat.
+- Je jure éternelle alliance
+Avec toi, repartit le Chat.
+Dispose de ma griffe, et sois en assurance :
+Envers et contre tous je te protégerai,
+Et la Belette mangerai
+Avec l'époux de la Chouette.
+Ils t'en veulent tous deux. Le Rat dit : Idiot !
+Moi ton libérateur ? Je ne suis pas si sot.
+Puis il s'en va vers sa retraite.
+La Belette était près du trou.
+Le Rat grimpe plus haut ; il y voit le Hibou :
+Dangers de toutes parts ; le plus pressant l'emporte.
+Ronge-maille retourne au Chat, et fait en sorte
+Qu'il détache un chaînon, puis un autre, et puis tant
+Qu'il dégage enfin l'hypocrite.
+L'homme paraît en cet instant.
+Les nouveaux alliés prennent tous deux la fuite.
+À quelque temps de là, notre Chat vit de loin
+Son Rat qui se tenait alerte et sur ses gardes.
+Ah ! mon frère, dit-il, viens m'embrasser ; ton soin
+Me fait injure ; tu regardes
+Comme ennemi ton allié.
+Penses-tu que j'aie oublié
+Qu'après Dieu je te dois la vie ?
+- Et moi, reprit le Rat, penses-tu que j'oublie
+Ton naturel ? Aucun traité
+Peut-il forcer un Chat à la reconnaissance ?
+S'assure-t-on sur l'alliance
+Qu'a faite la nécessité ? </p>
+  </div>
+  <div class="illustration">
+    <div class="image-block">
+    <img src="images/chat.jpg" alt="HTML5 Icon" style="width:500px;height:500px;">
+    </div>
+    <figcaption>il est pas bête le rat</figcaption>
+  </div>
+</section>
+
+<section id="section04" class="even">
+  <div class="content">
+    <h1>Le corbeaux et le renard</h1>
+    <p>Maître Corbeau, sur un arbre perché,
+           Tenait en son bec un fromage.
+       Maître Renard, par l'odeur alléché,
+           Lui tint à peu près ce langage :
+       Et bonjour, Monsieur du Corbeau,
+    Que vous êtes joli ! que vous me semblez beau !
+           Sans mentir, si votre ramage
+           Se rapporte à votre plumage,
+     Vous êtes le Phénix des hôtes de ces bois.
+À ces mots le Corbeau ne se sent pas de joie,
+           Et pour montrer sa belle voix,
+   Il ouvre un large bec, laisse tomber sa proie.
+   Le Renard s'en saisit, et dit : Mon bon Monsieur,
+              Apprenez que tout flatteur
+     Vit aux dépens de celui qui l'écoute.
+   Cette leçon vaut bien un fromage sans doute.
+           Le Corbeau honteux et confus
+   Jura, mais un peu tard, qu'on ne l'y prendrait plus.</p>
+  </div>
+  <div class="illustration">
+    <div class="image-block">
+    <img src="images/renard.jpg" alt="HTML5 Icon" style="width:500px;height:500px;">
+    </div>
+    <figcaption>il s'est véxé le corbeau dabord</figcaption>
+  </div>
+</section>
+
+<section id="section05" class="odd">
+  <div class="content">
+    <h1>Le coq et le renard</h1>
+    <p>Sur la branche d'un arbre était en sentinelle
+Un vieux Coq adroit et matois (1).
+Frère, dit un Renard adoucissant sa voix,
+Nous ne sommes plus en querelle
+Paix générale cette fois.
+Je viens te l'annoncer ; descends que je t'embrasse (2) ;
+Ne me retarde point, de grâce :
+Je dois faire aujourd'hui vingt postes sans manquer
+Les tiens et toi pouvez vaquer,
+ans ns nulle crainte à vos affaires :
+Nous vous y servirons en frères.
+Faites-en les feux dès ce soir.
+Et cependant, viens recevoirLe baiser d'amour fraternelle (4).
+Ami, reprit le Coq, je ne pouvais jamais
+Apprendre une plus douce et meilleure nouvelle
+Que celle
+   De cette paix.
+Et ce m'est une double joie
+De la tenir de toi. Je vois deux Lévriers,
+Qui, je m'assure, sont courriers
+Que pour ce sujet on envoie.
+Ils vont vite, et seront dans un moment à nous.
+Je descends : nous pourrons nous entre-baiser tous.
+Adieu, dit le Renard, ma traite est longue à faire,
+Nous nous réjouirons du succès de l'affaire
+Une autre fois. Le Galand aussitôt
+Tire ses grègues (5), gagne au haut (6),
+Mal content de son stratagème ;
+Et notre vieux Coq en soi-même
+Se mit à rire de sa peur
+Car c'est double plaisir de tromper le trompeur</p>
+  </div>
+  <div class="illustration">
+    <div class="image-block">
+    <img src="images/coq.jpg" alt="HTML5 Icon" style="width:500px;height:500px;">
+    </div>
+    <figcaption>comme un mauvais présage</figcaption>
+  </div>
+<center></section>
 
 
-<h1>Les Deux Pigeons</h1>
-<p>Deux Pigeons s’aimaient d’amour tendre :
-L’un d’eux, s’ennuyant au logis,
-Fut assez fou pour entreprendre
-Un voyage en lointain pays.
-L’autre lui dit : « Qu’allez-vous faire ?
-Voulez-vous quitter votre frère ?
-L’absence est le plus grand des maux :
-Non pas pour vous, cruel ! Au moins, que les travaux,
-Les dangers, les soins du voyage,
-Changent un peu votre courage.
-Encore, si la saison s’avançait davantage !
-Attendez les zéphyrs : qui vous presse ? un corbeau
-Tout à l’heure annonçait malheur à quelque oiseau.
-Je ne songerai plus que rencontre funeste,
-Que faucons, que réseaux. Hélas, dirai-je, il pleut :
-Mon frère a-t-il tout ce qu’il veut,
-Bon soupé, bon gîte, et le reste ? »
-Ce discours ébranla le cœur
-De notre imprudent voyageur ;
-Mais le désir de voir et l’humeur inquiète
-L’emportèrent enfin. Il dit : « Ne pleurez point ;
-Trois jours au plus rendront mon âme satisfaite :
-Je reviendrai dans peu conter de point en point
-Mes aventures à mon frère ;
-Je le désennuierai. Quiconque ne voit guère
-N’a guère à dire aussi. Mon voyage dépeint
-Vous sera d’un plaisir extrême.
-Je dirai : J’étais là ; telle chose m’advint :
-Vous y croirez être vous-même. »
-À ces mots, en pleurant, ils se dirent adieu.
-Le voyageur s’éloigne : et voilà qu’un nuage
-L’oblige de chercher retraite en quelque lieu.
-Un seul arbre s’offrit, tel encore que l’orage
-Maltraita le Pigeon en dépit du feuillage.
-L’air devenu serein, il part tout morfondu,
-Sèche du mieux qu’il peut son corps chargé de pluie ;
-Dans un champ à l’écart voit du blé répandu,
-Voit un pigeon auprès : cela lui donne envie ;
-Il y vole, il est pris : ce blé couvrait d’un lacs,
-Les menteurs et traîtres appas.
-Le lacs était usé ; si bien que, de son aile,
-De ses pieds, de son bec, l’oiseau le rompt enfin :
-Quelque plume y périt, et le pis du destin
-Fut qu’un certain vautour, à la serre cruelle,
-Vit notre malheureux, qui, traînant la ficelle
-Et les morceaux du lacs qui l’avait attrapé,
-Semblait un forçat échappé.
-Le vautour s’en allait le lier, quand des nues
-Fond à son tour un aigle aux ailes étendues.
-Le Pigeon profita du conflit des voleurs,
-S’envola, s’abattit auprès d’une masure,
-Crut, pour ce coup, que ses malheurs
-Finiraient par cette aventure ;
-Mais un fripon d’enfant (cet âge est sans pitié)
-Prit sa fronde, et du coup tua plus d’à moitié
-La volatile malheureuse,
-Qui, maudissant sa curiosité,
-Traînant l’aile et tirant le pied,
-Demi-morte et demi-boiteuse,
-Droit au logis s’en retourna :
-Que bien, que mal, elle arriva,
-Sans autre aventure fâcheuse.
-Voilà nos gens rejoints ; et je laisse à juger
-De combien de plaisirs ils payèrent leurs peines.
-Amants, heureux amants, voulez-vous voyager ?
-Que ce soit aux rives prochaines.
-Soyez-vous l’un à l’autre un monde toujours beau,
-Toujours divers, toujours nouveau ;
-Tenez-vous lieu de tout, comptez pour rien le reste.
-J’ai quelquefois aimé : je n’aurais pas alors,
-Contre le Louvre et ses trésors,
-Contre le firmament et sa voûte céleste,
-Changé les bois, changé les lieux
-Honorés par les pas, éclairés par les yeux
-De l’aimable et jeune bergère
-Pour qui, sous le fils de Cythère,
-Je servis, engagé par mes premiers serments.
-Hélas ! quand reviendront de semblables moments ?
-Faut-il que tant d’objets si doux et si charmants
-Me laissent vivre au gré de mon âme inquiète ?
-Ah ! si mon cœur osait encore se renflammer !
-Ne sentirai-je plus de charme qui m’arrête ?
-Ai-je passé le temps d’aimer ?</p>
-<img src="images/pigeon.jpg" alt="">
+<footer>
+ <center><p>D'autres fables à découvrir : </p>
+  <center><ol>
+    <li>Le loup et l'agneau</li>
+    <li>Les animaux malades de la peste</li>
+    <li>Le lion amoureux</li>
+    <li>L'homme et la couleuvre</li>
+  </ol>
+</footer>
 
-
-<h1>Le Lion</h1>
-<p>Sultan Léopard autrefois
-Eut, ce dit-on, par mainte aubaine,
-Force bœufs dans ses prés, force Cerfs dans ses bois,
-Force moutons parmi la plaine.
-Il naquit un Lion dans la forêt prochaine.
-Après les compliments et d’une et d’autre part,
-Comme entre grands il se pratique,
-Le Sultan fit venir son Vizir le Renard,
-Vieux routier et bon politique.
-Tu crains, ce lui dit-il, Lionceau mon voisin :
-Son père est mort, que peut-il faire ?
-Plains plutôt le pauvre orphelin.
-Il a chez lui plus d’une affaire ;
-Et devra beaucoup au destin
-S’il garde ce qu’il a sans tenter de conquête.
-Le Renard dit branlant la tête :
-Tels orphelins, Seigneur, ne me font point pitié :
-Il faut de celui-ci conserver l’amitié,
-Ou s’efforcer de le détruire,
-Avant que la griffe et la dent
-Lui soit crue, et qu’il soit en état de nous nuire :
-N’y perdez pas un seul moment.
-J’ai fait son horoscope : il croîtra par la guerre.
-Ce sera le meilleur Lion
-Pour ses amis qui soit sur terre,
-Tâchez donc d’en être, sinon
-Tâchez de l’affaiblir. La harangue fut vaine.
-Le Sultan dormait lors ; et dedans son domaine
-Chacun dormait aussi, bêtes, gens ; tant qu’enfin
-Le Lionceau devient vrai Lion. Le tocsin
-Sonne aussi-tôt sur lui ; l’alarme se promène
-De toutes parts ; et le Vizir,
-Consulté là-dessus dit avec un soupir :
-Pourquoi l’irritez-vous ? La chose est sans remède.
-En vain nous appelons mille gens à notre aide.
-Plus ils sont, plus il coûte ; et je ne les tiens bons
-Qu’à manger leur part des moutons.
-Apaisez le Lion : seul il passe en puissance
-Ce monde d’alliés vivants sur notre bien :
-Le Lion en a trois qui ne lui coûtent rien,
-Son courage, sa force, avec sa vigilance.
-Jetez-lui promptement sous la griffe un mouton :
-S’il n’en est pas content jetez-en davantage.
-Joignez-y quelque bœuf : choisissez pour ce don
-Tout le plus gras du pâturage.
-Sauvez le reste ainsi. Ce conseil ne plut pas,
-Il en prit mal, et force états
-Voisins du Sultan en pâtirent :
-Nul n’y gagna ; tous y perdirent.
-Quoi que fît ce monde ennemi,
-Celui qu’ils craignaient fut le maître.
-Proposez-vous d’avoir le Lion pour ami
-Si vous voulez le laisser craistre.</p>
-<img src="images/lionbeau.jpg" alt="">
-
-
-<h1>Le Singe et le Léopard</h1>
-<p>Le Singe avec le Léopard
-Gagnaient de l’argent à la foire :
-Ils affichaient chacun à part.
-L’un d’eux disait : Messieurs, mon mérite et ma gloire
-Sont connus en bon lieu ; le Roi m’a voulu voir ;
-Et si je meurs il veut avoir
-Un manchon de ma peau ; tant elle est bigarrée,
-Pleine de taches, marquetée,
-Et vergetée, et mouchetée.
-La bigarrure plaît ; partant chacun le vit.
-Mais ce fut bientôt fait, bientôt chacun sortit.
-Le Singe de sa part disait : Venez de grâce,
-Venez Messieurs ; Je fais cent tours de passe-passe.
-Cette diversité dont on vous parle tant,
-Mon voisin Léopard l’a sur soi seulement ;
-Moi je l’ai dans l’esprit : votre serviteur Gille,
-Cousin et gendre de Bertrand,
-Singe du Pape en son vivant ;
-Tout fraîchement en cette ville
-Arrive en trois bateaux exprès pour vous parler ;
-Car il parle, on l’entend, il sait danser, baller,
-Faire des tours de toute sorte,
-Passer en des cerceaux ; et le tout pour six blancs :
-Non, Messieurs, pour un sou ; si vous n’êtes contents,
-Nous rendrons à chacun son argent à la porte.
-Le Singe avait raison ; ce n’est pas sur l’habit
-Que la diversité me plaît, c’est dans l’esprit :
-L’une fournit toujours des choses agréables ;
-L’autre en moins d’un moment lasse les regardants.
-Oh ! que de grands Seigneurs au Léopard semblables,
-Bigarrés en dehors, ne sont rien en dedans !</p>
-<img src="images/singe.jpg" alt="">
+  </body>
+</html>
