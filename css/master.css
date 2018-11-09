@@ -76,7 +76,7 @@ header a {
 3. une hauteur minimal à la div. (pour comprendre ce qu’est une VH : https://css-tricks.com/the-lengths-of-css/)
 */
 .hero {
-  background: rgb(204, 255, 255) url('images/petitrenard.jpg') top center no-repeat;
+  background: rgb(204, 255, 255) url('images/petitrenard.png') top center no-repeat;
   <images="border-color:#FFFFFF;" border="10" src="images/petitrenard.jpg"/>
   background-attachment: fixed;
   color : #ffffff;
